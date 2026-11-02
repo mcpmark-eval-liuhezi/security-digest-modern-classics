@@ -46,4 +46,4 @@
 - **First fixed version:** xz 5.6.3 (liblzma 5.6.3; 5.6.4 also issued for liblzma)
 - **Disclosure year:** 2024 (publicly disclosed March 29, 2024)
 - **Authoritative link:** https://github.com/advisories/GHSA-rxwq-x6h5-x525
-- **What to tell your team:** This was not a bug but an intentional supply-chain compromise: malicious .m4 build directives embedded in tarballs from 5.6.0 onward altered liblzma at build time. Trust no upstream xz tarball in the 5.6.0–5.6.2 range — verify checksums/signatures, reply-build from verified sources, and check every product linking liblzma (notably OpenSSH).
+- **What to tell your team:** This was not a bug but an intentional supply-chain compromise: malicious .m4 build directives embedded in tarballs from 5.6.0 onward altered liblzma at build time. Trust no upstream xz tarball in the 5.6.0–5.6.2 range — verify checksums/signatures, rebuild from verified sources, and check every product linking liblzma (notably OpenSSH).
